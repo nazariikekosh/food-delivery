@@ -12,6 +12,9 @@ export default function RestaurantCard({item}) {
                     <Image source={require('../assets/images/fullStar.png')} className="h-4 w-4" />
                     <Text className="text-xs">
                         <Text className="text-green-700">{item.stars}</Text>
+                        <Text className="text-gray-700">
+                            ({item.reviews} review). <Text className="font-semibold">{item.category}</Text> 
+                        </Text>
                     </Text>
                 </View>
             </View>
