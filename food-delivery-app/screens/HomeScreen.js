@@ -14,7 +14,7 @@ export default function HomeScreen() {
 
       {/* search bar*/}
 
-      <View className="flex-row items-center space-x-2 px-4 pb-2">
+      <View className="flex-row items-center space-x-2 px-4 py-2">
         <View className="flex-row flex-1 item-center p-3 rounded-full border border-gray-300">
           <Icon.Search height="25" width="25" stroke="gray" />
           <TextInput placeholder='Restaurants' className="ml-2 flex-1" />
