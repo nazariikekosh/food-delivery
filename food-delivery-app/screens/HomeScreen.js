@@ -11,7 +11,7 @@ import FeaturedRow from '../components/featuredRow'
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView className="bg-white">
+    <SafeAreaView>
       <StatusBar barStyle="dark-content" />
 
       {/* search bar*/}
