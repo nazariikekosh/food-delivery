@@ -18,7 +18,7 @@ export default function HomeScreen() {
             <Text className="text-gray-600">Drohobuch, UKR</Text>
           </View>
         </View>
-        <View className="p-3 rounded-full">
+        <View className="p-3 bg-gray-300 rounded-full">
           <Icon.Sliders height="20" width="20" strokeWidth={2.5} stroke="gray" />
         </View>
       </View>
