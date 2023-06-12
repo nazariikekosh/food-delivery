@@ -1,5 +1,6 @@
 import { View, Text, TouchableNativeFeedback, TouchableWithoutFeedback, Image} from 'react-native'
 import React from 'react'
+import * as Icon from "react-native-feather"
 
 export default function RestaurantCard({item}) {
   return (
@@ -16,6 +17,9 @@ export default function RestaurantCard({item}) {
                             ({item.reviews} review). <Text className="font-semibold">{item.category}</Text> 
                         </Text>
                     </Text>
+                </View>
+                <View className="flex-row items-center space-x-1">
+                    <Icon.MapPin color="gray" width="15" height="15" />
                 </View>
             </View>
         </View>
