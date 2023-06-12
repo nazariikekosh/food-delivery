@@ -1,10 +1,12 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableNativeFeedback, TouchableWithoutFeedback, Image} from 'react-native'
 import React from 'react'
 
-export default function RestaurantCard() {
+export default function RestaurantCard({item}) {
   return (
-    <View>
-      <Text>RestaurantCard</Text>
-    </View>
+    <TouchableWithoutFeedback>
+        <View className="mr-6 bg-white rounded-3xl shadow-lg">
+            <Image className="h-36 w-64 rounded-t-3xl" source={item.image} />
+        </View>
+    </TouchableWithoutFeedback>
   )
 }
