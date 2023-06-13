@@ -10,15 +10,18 @@ export default function CartScreen() {
     const navigation = useNavigation()
   return (
     <View className="bg-white flex-1">
-      {/* back button */}
-      <View className="relative py-4 shadow-sm">
-        <TouchableOpacity
-        onPress={()=> navigation.goBack()}
-         style={{backgroundColor: themeColors.bgColor(1)}} 
-        className=" absolute z-10 rounded-full p-1 shadow top-5 left-2">
-            <Icon.ArrowLeft strokeWidth={3} stroke="white" />
-        </TouchableOpacity>
+    {/* back button */}
+    <View className="relative py-4 shadow-sm">
+      <TouchableOpacity
+      onPress={()=> navigation.goBack()}
+       style={{backgroundColor: themeColors.bgColor(1)}} 
+      className=" absolute z-10 rounded-full p-1 shadow top-5 left-2">
+          <Icon.ArrowLeft strokeWidth={3} stroke="white" />
+      </TouchableOpacity>
+      <View>
+        <Text className="text-center font-bold text-xl">Your cart</Text>
       </View>
     </View>
+  </View>
   )
 }
