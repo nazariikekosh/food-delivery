@@ -4,6 +4,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import * as Icon from "react-native-feather";
 import { themeColors } from "../theme";
 import DishRow from "../components/dishRow";
+import CartIcon from "../components/cartIcon";
 
 export default function RestaurantScreen() {
   const { params } = useRoute();
@@ -12,6 +13,7 @@ export default function RestaurantScreen() {
   // console.log('restaurant:', item);
   return (
     <View>
+        <CartIcon />
       <ScrollView>
         <View className="relative">
           <Image className="w-full h-72" source={item.image} />
