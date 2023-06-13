@@ -12,6 +12,12 @@ export default function CartIcon() {
                 3
             </Text>
         </View>
+        <Text className="flex-1 text-center font-extrabold text-white text-lg">
+          View Cart
+        </Text>
+        <Text className=" font-extrabold text-white text-lg">
+          ${23}
+        </Text>
       </TouchableOpacity>
     </View>
   )
