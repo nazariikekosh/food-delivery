@@ -74,16 +74,28 @@ export default function CartScreen() {
       
       <View  style={{backgroundColor: themeColors.bgColor(0.2)}} className="p-6 px-8 rounded-t-3xl space-y-4">
         <View className="flex-row justify-between">
-          <Text className="text-gray-700">
-            Subtotal
-          </Text>
-          <Text className="text-gray-700">
-            20$
-          </Text>
+          <Text className="text-gray-700">Subtotal</Text>
+          <Text className="text-gray-700">$20</Text>
         </View>
+        <View className="flex-row justify-between">
+          <Text className="text-gray-700">Delivery Fee</Text>
+          <Text className="text-gray-700">$2</Text>
+        </View>
+        <View className="flex-row justify-between">
+          <Text className="text-gray-700 font-extrabold">Order Total</Text>
+          <Text className="text-gray-700 font-extrabold">$30</Text>
+        </View>
+        <View>
+        <TouchableOpacity
+        style={{backgroundColor: themeColors.bgColor(1)}}
+        className="p-3 rounded-full">
+          <Text className="text-white text-center font-bold text-lg">
+            Place Order
+          </Text>
+        </TouchableOpacity>
       </View>
-
-
+      </View>
+      
   </View>
   )
 }
