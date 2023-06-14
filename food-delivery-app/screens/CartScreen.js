@@ -59,11 +59,29 @@ export default function CartScreen() {
                 <Image className="h-14 w-14 rounded-full" source={dish.image} />
                 <Text className="flex-1 font-bold text-gray-700">{dish.name}</Text>
                 <Text className="font-semibold text-base">${dish.price}</Text> 
+                <TouchableOpacity className="p-1 rounded-full"
+                style={{backgroundColor: themeColors.bgColor(1)}}
+                >
+                  <Icon.Minus strokeWidth={2} height={20} width={20} stroke="white" />
+                </TouchableOpacity>
               </View>
             )
           })
         }
       </ScrollView>
+
+      {/* totals */}
+      
+      <View  style={{backgroundColor: themeColors.bgColor(0.2)}} className="p-6 px-8 rounded-t-3xl space-y-4">
+        <View className="flex-row justify-between">
+          <Text className="text-gray-700">
+            Subtotal
+          </Text>
+          <Text className="text-gray-700">
+            20$
+          </Text>
+        </View>
+      </View>
 
 
   </View>
