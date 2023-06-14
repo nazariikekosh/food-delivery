@@ -87,6 +87,7 @@ export default function CartScreen() {
         </View>
         <View>
         <TouchableOpacity
+        onPress={()=> navigation.navigate('OrderPrepairing')}
         style={{backgroundColor: themeColors.bgColor(1)}}
         className="p-3 rounded-full">
           <Text className="text-white text-center font-bold text-lg">
