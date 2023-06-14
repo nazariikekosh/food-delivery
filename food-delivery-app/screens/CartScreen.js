@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { featured } from '../constants'
 import { themeColors } from '../theme';
@@ -20,8 +20,23 @@ export default function CartScreen() {
       </TouchableOpacity>
       <View>
         <Text className="text-center font-bold text-xl">Your cart</Text>
+        <Text className="text-center text-gray-500">{restaurant.name}</Text>
       </View>
     </View>
+
+    {/* delivery time */}
+
+    <View style={{backgroundColor: themeColors.bgColor(0.2)}} 
+    className="flex-row px-4 items-center">
+      <Image source={require('../assets/images/bikeGuy.png')} className="w-20 h-20 rounded-full" />
+      <Text className=" flex-1 pl-4">Deliver in 20-30 minutes</Text>
+      <TouchableOpacity>
+        <Text className="font-bold" style={{color: themeColors.text}}>
+          Change
+        </Text>
+      </TouchableOpacity>
+    </View>
+
   </View>
   )
 }
