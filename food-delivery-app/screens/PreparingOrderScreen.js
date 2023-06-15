@@ -2,6 +2,7 @@ import { View, Text, Image } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
+
 export default function PreparingOrderScreen() {
   const navigation = useNavigation()
   useEffect(()=>{
