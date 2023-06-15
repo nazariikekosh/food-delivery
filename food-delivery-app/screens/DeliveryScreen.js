@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { featured } from '../constants'
 import { useNavigation } from '@react-navigation/native';
@@ -44,6 +44,7 @@ export default function DeliveryScreen() {
                             You order is own its way!
                         </Text>
                     </View>
+                    <Image className="w-24 h-24" source={require('../assets/images/bikeGuy2.gif')} />
                 </View>
             </View>
     </View>
