@@ -1,5 +1,4 @@
 import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
-
 import { useNavigation, useRoute } from "@react-navigation/native";
 import * as Icon from "react-native-feather";
 import { themeColors } from "../theme";
