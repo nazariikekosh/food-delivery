@@ -33,6 +33,7 @@ export default function DishRow({item}) {
                 <View className="flex-row items-center">
                     <TouchableOpacity
                         onPress={handleDecrease}
+                        disabled={!totalItems.length}
                     className="p-1 rounded-full" style={{backgroundColor: themeColors.bgColor(1)}}>
                         <Icon.Minus strokeWidth={2} height={20} width={20} stroke={'white'} />
                     </TouchableOpacity>
