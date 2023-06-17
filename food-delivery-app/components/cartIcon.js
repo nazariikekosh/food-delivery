@@ -8,7 +8,7 @@ import { selectCartItems } from '../slices/cartSlice'
 export default function CartIcon() {
     const navigation = useNavigation();
     const cartItems = useSelector(selectCartItems);
-    if(!cartItems.lenght) return;
+    if(!cartItems.length) return;
   return (
     <View className="absolute bottom-5 w-full z-50">
       <TouchableOpacity
