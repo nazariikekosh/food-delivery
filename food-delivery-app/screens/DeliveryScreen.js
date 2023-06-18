@@ -70,8 +70,8 @@ export default function DeliveryScreen() {
                                 Nazarii Kekosh    
                             </Text>    
                             <Text className="font-semibold text-white">
-                                Your Rider   
-                            </Text>  
+                                Your Rider
+                            </Text>
                          </View> 
                          <View className="flex-row items-center space-x-3 mr-3">
                             <TouchableOpacity className="bg-white p-2 rounded-full">
