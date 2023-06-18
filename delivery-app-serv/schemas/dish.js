@@ -5,27 +5,27 @@ export default defineType({
   title: 'Dishes',
   type: 'document',
   fields: [
-    {
-      name: 'name',
-      type: 'string',
-      title: 'Dish Name',
-      validation: rule=> rule.required()
+      {
+        name: 'name',
+        type: 'string',
+        title: 'Dish name',
+        validation: rule=> rule.required(),
     },
     {
-      name: 'description',
-      type: 'string',
-      title: 'Dish description',
-      validation: rule=> rule.required()
+        name: 'description',
+        type: 'string',
+        title: 'Description',
+        validation: rule=> rule.max(200),
     },
     {
-      name: 'image',
+      name: 'image', 
       type: 'image',
-      title: 'image of the category'
+      title: 'Image of the dish'
     },
     {
-        name: 'price',
-        type: 'number',
-        title: 'Price of the dish in USD'
-      }
-  ],
+      name: 'price',
+      title: 'Price of the dish in USD',
+      type: 'number'
+    }
+  ]
 })

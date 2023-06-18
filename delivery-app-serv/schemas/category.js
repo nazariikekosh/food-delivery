@@ -2,25 +2,25 @@ import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'category',
-  title: 'Category',
+  title: 'Categories',
   type: 'document',
   fields: [
     {
       name: 'name',
       type: 'string',
-      title: 'Category Name',
-      validation: rule=> rule.required()
-    },
-    {
+      title: 'Category name',
+      validation: rule=> rule.required(),
+   },
+   {
       name: 'description',
       type: 'string',
-      title: 'Category description',
-      validation: rule=> rule.required()
-    },
-    {
+      title: 'Description',
+      validation: rule=> rule.max(200),
+   },
+   {
       name: 'image',
       type: 'image',
-      title: 'image of the category'
-    }
+      title: 'image of the resturant',
+   }
   ],
 })
