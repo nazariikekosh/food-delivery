@@ -67,10 +67,10 @@ export default function DeliveryScreen() {
                         </View>       
                         <View className="flex-1 ml-3">
                             <Text className="text-lg font-bold text-white">
-                                Nazarii Kekosh    
+                            WebStudio Red 
                             </Text>    
                             <Text className="font-semibold text-white">
-                                Your Rider
+                                +38 098 408 5215
                             </Text>
                          </View> 
                          <View className="flex-row items-center space-x-3 mr-3">
